@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
     echo $row["id"];
     
 } else {
-    echo "No queues found";
+    echo "---";
 }
 
 $conn->close();

@@ -1,25 +1,10 @@
-
-<html>
-<head>
-  <title>Monitor</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
 <body>
     <div class = "container">
-      <div class = "pending-tasks">
   <h1>Pending Queue Monitor</h1>
-  <div id="pendingQueue"></div>
-      </div>
-      <div class = "queue">
-<h1>Now Serving:<h1>
-<span id="span-list"></span>
-</div>
-</body>
 
 <script>
     $(document).ready(function() {
-      setInterval(fetchPendingQueue, 5000);-
+      setInterval(fetchPendingQueue, 5000);
     });
 
     function fetchQueue(){
@@ -48,3 +33,4 @@
       });
     }
   </script>
+

@@ -6,7 +6,7 @@ if(isset($_SESSION['user_id']) && $_SESSION['user_id'] > 0){
 }*/
 session_start();
 include 'desktop.html';
-include './../DBConnection.php';
+include '../DBConnection.php';
 
 $conn = OpenCon();
 ?>

@@ -9,7 +9,7 @@ include '../qscript.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW STUDENT</title>
-    <link rel="stylesheet" href="../form/desktop-2.css">
+    <link rel="stylesheet" href="desktop-2.css">
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -51,10 +51,6 @@ include '../qscript.php';
                         <input placeholder="Name" type="text" id = "oldName" name = "oldName" autocomplete="off">
                         <label for="name">Name:</label>
                     </div>
-                    <!-- <div class="floating-label">
-                        <input placeholder="Mobile" type="text" id = "oldMobile" name = "oldMobile" autocomplete="off">
-                        <label for="email">Mobile:</label>
-                    </div> -->
                     <div class="floating-label">
                         <input placeholder="Email" type="email" id = "oldEmail" name = "oldEmail" autocomplete="off">
                         <label for="email">Email:</label>

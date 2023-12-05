@@ -14,8 +14,7 @@ include '../qscript.php';
 
 <img class="img-position" src="path/to/your/logo.png" alt="Logo">
 
-<form class="form-container">
-   
+
     <div class="row">
         <div class="column left">
           <h2>Accounting</h2>
@@ -44,9 +43,12 @@ include '../qscript.php';
             </div>    
         </div>
     </div>
-</form>
+</body>
+</html>
+
+
 <script>
-$("#btn-next").click(function(){
+    $("#btn-next").click(function(){
     $.ajax({
      type: "GET",
      url: "next-queue.php",
@@ -58,12 +60,10 @@ $("#btn-next").click(function(){
   })
 
   $("#btn-recall").click(function(){
-    alert('aaa')
     $.ajax({
      type: "GET",
      url: "recall-queue.php",
      success: function(msg){
-      alert(msg)
        $("#span-list").html(msg);
      }
     })
@@ -94,5 +94,3 @@ $("#btn-next").click(function(){
     audio.play();
   }
 </script>
-</body>
-</html>
