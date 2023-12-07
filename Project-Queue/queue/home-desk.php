@@ -88,7 +88,7 @@ include '../qscript.php';
      }
     })
   })
-
+ 
   function notify(){
     var audio = document.getElementById("notification");
     audio.play();

@@ -1,5 +1,5 @@
 <?php
-include '../qscript.php';
+include '../Script/qscript.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ include '../qscript.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW STUDENT</title>
-    <link rel="stylesheet" href="desktop-2.css">
+    <link rel="stylesheet" href="../css/desktop-2.css">
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -59,16 +59,7 @@ include '../qscript.php';
                         <select id="first-dropdown" name="firstDropDown" onchange="loadSecondDropdown()">
                             <option value="">Department</option>
                             <?php
-                    
-                            include '../DBConnection.php';
-                            $connection = OpenCon();
-            
-                            $query = "SELECT * FROM transaction_types";
-                            $result = mysqli_query($connection, $query);
-            
-                            while ($row = mysqli_fetch_assoc($result)) {
-                            echo '<option value="' . $row['id'] . '">' . $row['department'] . '</option>';
-                            }
+                            include 'queue-home2.php';
                             ?>
                         </select>
                     </div>
@@ -103,12 +94,7 @@ include '../qscript.php';
                         <select id="first-dropdown-other" name="firstDropdownOthers" onchange="loadSecondDropdownOther()">
                             <option value="">Department</option>
                             <?php
-                                $query = "SELECT * FROM transaction_types";
-                                $result = mysqli_query($connection, $query);
-    
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                echo '<option value="' . $row['id'] . '">' . $row['department'] . '</option>';
-                            }
+                                include 'queue-home2.php';
                             ?>
                         </select>
                     </div>

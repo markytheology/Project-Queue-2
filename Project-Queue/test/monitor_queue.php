@@ -33,17 +33,17 @@ $conn->close();
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="../css/monitor.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<img class="img-position" src="../image/uc-logo-bg-160x83.c24343b851e5b064daf9.png" alt="Logo">
+<img class="img-position" src="path/to/your/logo.png" alt="Logo">
 
 
     <div class="row">
         <div class="column left">
-          <h2>Cashier</h2>
+          <h2>Accounting</h2>
           <h1 class="number-size-h1">0</h1>
           <h3>Window</h3>
         </div>
@@ -60,7 +60,9 @@ $conn->close();
             </div>
             <div>
                 <h3 class="h3-margin">Now Serving</h3>
-            </div>  
+            </div>
+            <div class="btn-control">
+            </div>
         </div>
     </div>
 </body>
