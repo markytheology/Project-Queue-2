@@ -40,7 +40,7 @@ include '../Script/qscript.php';
 
             <div id = "studentForm" class = "form-container">
                 <h2>Student Form</h2>
-                <form method="POST" action="get-student.php">
+                <form method="POST" action="student-priority.php">
                     <h4>UNIVERSITY OF CEBU</h4>
                     <h4>Priority Number</h4>
                     <div class="floating-label">
@@ -74,7 +74,7 @@ include '../Script/qscript.php';
 
             <div id = "othersForm" class = "form-container">
                 <h2>Others Form</h2>
-                <form method="POST" action="get-others.php">
+                <form method="POST" action="others-priority.php">
                     <h4>UNIVERSITY OF CEBU</h4>
                     <h4>Priority Number</h4>
                     <div class="floating-label">
