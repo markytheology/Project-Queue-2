@@ -36,7 +36,7 @@
             $_SESSION['office']=$row['office'];
             $_SESSION['windows']=$row['windows'];
 
-            header("LOCATION: ../queue/home-queue.php");
+            header("LOCATION: ../queue/home-desk.php");
 
         }
 

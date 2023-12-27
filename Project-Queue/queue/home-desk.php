@@ -1,6 +1,5 @@
 <?php
 include 'queue.php';
-include '../qscript.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +11,7 @@ include '../qscript.php';
 </head>
 <body>
 
-<img class="img-position" src="path/to/your/logo.png" alt="Logo">
+<img class="img-position" src="../image/uc-logo-bg-160x83.c24343b851e5b064daf9.png" alt="Logo">
 
 
     <div class="row">
@@ -26,8 +25,8 @@ include '../qscript.php';
           <h2 id="pendingQueue"><?php echo $pendingList; ?></h2>
         </div>
         <div class="column right">
-            <div class="logout-button" action="../login/logout.php">
-                <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
+            <div class="logout-button">
+                <button type="submit" value = "Logout" class="btn" action="../login/logout.php"><i class="fa fa-close"></i></button>
             </div>
             <div>
                 <h1><span id="span-list" class="number-size-h1-sc">-</span></h1>

@@ -44,7 +44,7 @@ $conn->close();
     <div class="row">
         <div class="column left">
           <h2>Cashier</h2>
-          <h1 class="number-size-h1">0</h1>
+          <h1 class="number-size-h1">-</h1>
           <h3>Window</h3>
         </div>
         <div class="column middle">
