@@ -4,7 +4,7 @@
 
 <div class="card">
     <div class="card-header d-flex justify-content-between">
-        <h3 class="card-title">Cashiers List</h3>
+        <h3 class="card-title">Office List</h3>
         <div class="card-tools align-middle">
         <form action = 'home-admin.php' method = "POST">
         <button class="btn btn-dark btn-sm py-1 rounded-0" type="submit">Home</button>
@@ -13,20 +13,14 @@
     </div>
     <div class="card-body">
         <table class="table table-hover table-striped table-bordered">
-            <!-- <colgroup>
-                <col width="10%">
-                <col width="40%">
-                <col width="30%">
-            </colgroup> -->
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>ID NUMBER</th>
                     <th>NAME</th>
-                    <th">OFFICE</th>
+                    <th>OFFICE</th>
                     <th>WINDOWS</th>
                     <th>CAMPUS</th>
-                    <th>Action</th>
+                    <th>Status</th>
                 </tr>
             </thead>
 
@@ -34,7 +28,7 @@
 
 <?php
                 session_start();
-                include './../DBConnection.php';
+                include '../DBConnection.php';
                 $conn = OpenCon();
                 $sql = mysqli_query ($conn,"SELECT * FROM user_table");
                 $i = 1;

@@ -59,8 +59,16 @@ include '../Script/qscript.php';
                         <select id="first-dropdown" name="firstDropDown" onchange="loadSecondDropdown()">
                             <option value="">Department</option>
                             <?php
-                            include 'queue-home2.php';
-                            ?>
+                            include '../DBConnection.php';
+                            $connection = OpenCon();
+    
+                            $query = "SELECT * FROM transaction_types";
+                            $result = mysqli_query($connection, $query);
+    
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                echo '<option value="' . $row['id'] . '">' . $row['department'] . '</option>';
+                        }
+?>
                         </select>
                     </div>
                     <div class="floating-label">
@@ -94,7 +102,12 @@ include '../Script/qscript.php';
                         <select id="first-dropdown-other" name="firstDropdownOthers" onchange="loadSecondDropdownOther()">
                             <option value="">Department</option>
                             <?php
-                                include 'queue-home2.php';
+                                $query = "SELECT * FROM transaction_types";
+                                $result = mysqli_query($connection, $query);
+    
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo '<option value="' . $row['id'] . '">' . $row['department'] . '</option>';
+                            }
                             ?>
                         </select>
                     </div>

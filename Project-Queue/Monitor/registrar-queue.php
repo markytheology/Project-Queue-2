@@ -41,22 +41,109 @@ $conn->close();
 <img class="img-position" src="../image/uc-logo-bg-160x83.c24343b851e5b064daf9.png" alt="Logo">
 
 
-    <div class="row">
+<div class="row">
         <div class="column left">
-          <h2>Registrar</h2>
-          <h1 class="number-size-h1">-</h1>
-          <h3>Window</h3>
+          <h3>Registrar</h3>
+          <h3 class="number-size-h1">-</h3>
         </div>
         <div class="column middle">
-          <h4>Waiting Number</h4>
-          <h2 id="pendingQueue"><?php echo $pendingList; ?></h2>
+          <h3>Waiting Number</h3>
+          <h3 id="pendingQueue"><?php echo $pendingList; ?></h3>
         </div>
         <div class="column right">
             <div class="logout-button" action="../login/logout.php">
                 <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
             </div>
             <div>
-                <h1><span id="span-list" class="number-size-h1-sc"><?php echo $queue_number; ?></span></h1>
+                <h3><span id="span-list" class="number-size-h1-sc"> <?php echo $queue_number; ?></span></h3>
+            </div>
+            <div>
+                <h3 class="h3-margin">Now Serving</h3>
+            </div>  
+        </div>
+    </div>
+    <div class="row">
+        <div class="column left">
+        <h3 style = "color: white;">Registrar</h3>
+          <h3 class="number-size-h1">-</h3>
+          <h3 style = "color: white;">Registrar</h3>
+        </div>
+        <div class="column middle">
+          <h3>Waiting Number</h3>
+          <h3 id="pendingQueue"><?php echo $pendingList; ?></h3>
+        </div>
+        <div class="column right">
+            <div class="logout-button" action="../login/logout.php">
+                <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
+            </div>
+            <div>
+                <h3><span id="span-list" class="number-size-h1-sc"> <?php echo $queue_number; ?></span></h3>
+            </div>
+            <div>
+                <h3 class="h3-margin">Now Serving</h3>
+            </div>  
+        </div>
+    </div>
+    <div class="row">
+        <div class="column left">
+        <h3 style = "color: white;">Registrar</h3>
+          <h3 class="number-size-h1">-</h3>
+          <h3 style = "color: white;">Registrar</h3>
+        </div>
+        <div class="column middle">
+          <h3>Waiting Number</h3>
+          <h3 id="pendingQueue"><?php echo $pendingList; ?></h3>
+        </div>
+        <div class="column right">
+            <div class="logout-button" action="../login/logout.php">
+                <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
+            </div>
+            <div>
+                <h3><span id="span-list" class="number-size-h1-sc"> <?php echo $queue_number; ?></span></h3>
+            </div>
+            <div>
+                <h3 class="h3-margin">Now Serving</h3>
+            </div>  
+        </div>
+    </div>
+    <div class="row">
+        <div class="column left">
+        <h3 style = "color: white;">Registrar</h3>
+          <h3 class="number-size-h1">-</h3>
+          <h3 style = "color: white;">Registrar</h3>
+        </div>
+        <div class="column middle">
+          <h3>Waiting Number</h3>
+          <h3 id="pendingQueue"><?php echo $pendingList; ?></h3>
+        </div>
+        <div class="column right">
+            <div class="logout-button" action="../login/logout.php">
+                <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
+            </div>
+            <div>
+                <h3><span id="span-list" class="number-size-h1-sc"> <?php echo $queue_number; ?></span></h3>
+            </div>
+            <div>
+                <h3 class="h3-margin">Now Serving</h3>
+            </div>  
+        </div>
+    </div>
+    <div class="row">
+        <div class="column left">
+        <h3 style = "color: white;">Registrar</h3>
+          <h3 class="number-size-h1">-</h3>
+          <h3>Window</h3>
+        </div>
+        <div class="column middle">
+          <h3>Waiting Number</h3>
+          <h3 id="pendingQueue"><?php echo $pendingList; ?></h3>
+        </div>
+        <div class="column right">
+            <div class="logout-button" action="../login/logout.php">
+                <button type="submit" value = "Logout" class="btn"><i class="fa fa-close"></i></button>
+            </div>
+            <div>
+                <h3><span id="span-list" class="number-size-h1-sc"> <?php echo $queue_number; ?></span></h3>
             </div>
             <div>
                 <h3 class="h3-margin">Now Serving</h3>

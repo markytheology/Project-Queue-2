@@ -1,4 +1,5 @@
 <?php
+session_start ();
 include 'queue.php';
 ?>
 
@@ -7,6 +8,7 @@ include 'queue.php';
 <head>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/toggle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,8 +18,8 @@ include 'queue.php';
 
     <div class="row">
         <div class="column left">
-          <h2>Accounting</h2>
-          <h1 class="number-size-h1">0</h1>
+          <h2><?php echo $_SESSION['office'] ?></h2>
+          <h1 class="number-size-h1"><?php echo $_SESSION['windows'] ?></h1>
           <h3>Window</h3>
         </div>
         <div class="column middle">
@@ -26,7 +28,13 @@ include 'queue.php';
         </div>
         <div class="column right">
             <div class="logout-button">
-                <button type="submit" value = "Logout" class="btn" action="../login/logout.php"><i class="fa fa-close"></i></button>
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider" id = "toggle-switch"></span>    
+              </label>
+              <form action="../login/logout.php" method="POST">
+              <button type="submit" class="btn"><i class="fa fa-close"></i></button>
+            </form>
             </div>
             <div>
                 <h1><span id="span-list" class="number-size-h1-sc">-</span></h1>
